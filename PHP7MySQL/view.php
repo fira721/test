@@ -1,0 +1,12 @@
+<?php
+$head="head.php";
+$header="header.php";
+$sidebar="sidebar.php";
+$content="welcometext.php";
+$footer="footer.php";
+$page=(isset($_GET["page"]))?$_GET["page"]:"welcome";
+$title=(isset($_GET["title"]))?$_GET["title"]:"$page";
+$content="$page.php";
+$apptitle="$title";
+require("template.php");
+?>
